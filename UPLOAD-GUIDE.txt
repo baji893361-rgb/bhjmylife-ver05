@@ -1,0 +1,15 @@
+MY LIFE V0.5 업로드 구조
+
+GitHub 저장소 루트:
+- index.html
+- icon.svg
+- manifest.webmanifest
+- sw.js
+- api/ai.js  <-- 반드시 api 폴더 안에 있어야 합니다.
+
+중요: ai.js를 저장소 루트에 올리면 AI가 작동하지 않습니다.
+GitHub 웹에서 새 파일을 만들 때 파일명을 api/ai.js 로 입력하면 api 폴더가 자동 생성됩니다.
+
+배포 후 테스트:
+https://내도메인.vercel.app/api/ai
+정상이면 JSON에 "ok": true, "version": "0.5"가 표시됩니다.
